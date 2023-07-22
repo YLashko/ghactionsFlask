@@ -4,8 +4,8 @@ from src.main import get_name
 
 class TestMain(unittest.TestCase):
     def test_name(self):
-        name = "John"
-        expected = "Hello John"
+        name = "Johns"
+        expected = "Hello Johns"
         print(os.getenv("MODE"))
         self.assertEqual(get_name(name), expected)
 
