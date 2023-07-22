@@ -10,7 +10,7 @@ def get_name(name):
 
 @app.route("/", methods=["GET"])
 def main():
-    number = " ".join([str(randint(0, 9)) for _ in range(200)])
+    number = " ".join([str(randint(0, 10)) for _ in range(200)])
     return render_template("main.html.jinja", number=number, mode=os.environ.get("MODE"))
 
 if __name__ == "__main__":
