@@ -20,7 +20,7 @@ jobs:
             MODE: "dev"
         
         steps:
-            - uses: actions/acheckout@v3
+            - uses: actions/checkout@v3
 
             - name: Set up Python
               uses: actions/setup-python@v4
