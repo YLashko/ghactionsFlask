@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/<name>", methods=["GET"])
 def get_name(name):
-    return render_template("name.html.jinja", name=name)
+    return f"Hello {name}"
 
 @app.route("/", methods=["GET"])
 def main():
